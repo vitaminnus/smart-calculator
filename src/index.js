@@ -1,26 +1,35 @@
 class SmartCalculator {
   constructor(initialValue) {
-    // your implementation
+    this.string = initialValue.toString();
+  }
+
+  valueOf() {
+    return eval(this.string);
   }
 
   add(number) {
-    // your implementation
+    this.string = this.string + '+' + number.toString();
+    return this;
   }
   
   subtract(number) {
-    // your implementation
+    this.string = this.string + '-' + number.toString();
+    return this;
   }
 
   multiply(number) {
-    // your implementation
+    this.string = this.string + '*' + number.toString();
+    return this;
   }
 
   devide(number) {
-    // your implementation
+    this.string = this.string + '/' + number.toString();
+    return this;
   }
 
   pow(number) {
-    // your implementation
+    this.string = this.string + '**' + number.toString();
+    return this;
   }
 }
 
